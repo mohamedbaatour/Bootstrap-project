@@ -1,3 +1,4 @@
+
 $(".logo").click(function () {
   window.location.href = "home.html";
 });
@@ -23,4 +24,3 @@ $(".car-toCart").click(function () {
   $(".card").append($("#cart.html-cart"));
   window.location.href = "cart.html";
 });
-
