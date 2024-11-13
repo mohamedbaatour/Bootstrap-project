@@ -1,0 +1,164 @@
+body {
+    color: white;
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins";
+  flex-direction: column;
+  
+}
+
+nav {
+  background-color: #181818;
+  border-radius: 100px;
+  min-width: 1000px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  flex-direction: row;
+  text-align: center;
+}
+
+.logo {
+  width: 200px;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+.logo:hover {
+  cursor: pointer;
+  scale: 1.02;
+}
+
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+a {
+  padding: 0 20px;
+  color: rgb(204, 204, 204);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.cartNav {
+  display: flex;
+  flex-direction: row;
+}
+
+.cartSVG {
+  margin-right: -7px;
+  color: white;
+  width: 25px;
+  height: 25px;
+}
+
+.contactNav {
+  display: flex;
+  flex-direction: row;
+}
+
+.contactSVG {
+      margin-right: -7px;
+  color: white;
+  width: 25px;
+  height: 25px;
+}
+
+
+.aboutNav {
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutSVG {
+      margin-right: -7px;
+  color: white;
+  width: 25px;
+  height: 25px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1 {
+    color: white;
+    margin-top: 50px;
+}
+
+.h3 {
+    color: gray;
+    font-weight: 400;
+    margin-top: -10px;
+    max-width: 950px;
+}
+
+.containerOfCards {
+    margin-top: 30px;
+    border-radius: 50px;
+    background-color: #ffffff0a;
+    min-width: 90%;
+    min-height: 100vh;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.searchTerm {
+    height: 40px !important;
+  width: 300px;
+  border-radius: 50px 0px 0px 50px !important;
+  border: none;
+  background-color: #ffffff0a;
+
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  padding-left: 15px;
+  transition: 0.3s;
+}
+
+.searchTerm:focus {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.searchButton {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #252525;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.buttonSVG {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
