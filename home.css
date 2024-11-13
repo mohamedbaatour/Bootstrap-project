@@ -24,8 +24,10 @@ nav {
 }
 
 .logo {
-  width: 200px;
-  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  margin-left: 50px;
+  margin-right: 160px;
   transition: 0.3s;
 }
 .logo:hover {
@@ -113,9 +115,9 @@ a:hover {
 .containerOfCards {
     margin-top: 30px;
     border-radius: 50px;
-    background-color: #ffffff0a;
-    min-width: 90%;
-    min-height: 100vh;
+    /* background-color: #ffffff0a; */
+    min-width: 80% !important;
+    min-height: auto;
 }
 
 .search {
@@ -161,4 +163,82 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(23,23,23,255);
+    width: 300px;
+    min-height: 340px;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 50px;
+    transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  scale: 1.02;
+}
+
+.carImg {
+    border-radius: 0px;
+    height: 100% !important;
+    width: 100% !important;
+    border: none;
+}
+
+.car-name {
+    font-size: 24px;
+}
+.car-disc {
+    font-size: 14px;
+    color: gray;
+    margin-top: -20px;
+    text-align: center;
+}
+
+.car-details {
+    background-color: #4c4c4c;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 50vh;
+    margin: 5px;
+    margin-right: 10px;
+    transition: 0.2s;
+    font-size: 16px;
+}
+
+.car-details:hover {
+    scale: 1.03;
+    cursor: pointer;
+}
+
+.car-toCart {
+    background-color: #373737;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 130px;
+    border-radius: 50vh;
+        margin: 5px;
+        transition: 0.2s;
+            font-size: 16px;
+}
+
+.car-toCart:hover {
+    scale: 1.03;
+    cursor: pointer;
 }
