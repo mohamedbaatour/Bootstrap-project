@@ -1,5 +1,5 @@
 body {
-    color: white;
+  color: white;
   background-color: black;
   margin: 0px;
   padding: 0px;
@@ -8,7 +8,6 @@ body {
   justify-content: center;
   font-family: "Poppins";
   flex-direction: column;
-  
 }
 
 nav {
@@ -73,12 +72,11 @@ a:hover {
 }
 
 .contactSVG {
-      margin-right: -7px;
+  margin-right: -7px;
   color: white;
   width: 25px;
   height: 25px;
 }
-
 
 .aboutNav {
   display: flex;
@@ -86,38 +84,38 @@ a:hover {
 }
 
 .aboutSVG {
-      margin-right: -7px;
+  margin-right: -7px;
   color: white;
   width: 25px;
   height: 25px;
 }
 
 .main {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .h1 {
-    color: white;
-    margin-top: 50px;
+  color: white;
+  margin-top: 50px;
 }
 
 .h3 {
-    color: gray;
-    font-weight: 400;
-    margin-top: -10px;
-    max-width: 950px;
+  color: gray;
+  font-weight: 400;
+  margin-top: -10px;
+  max-width: 950px;
 }
 
 .containerOfCards {
-    margin-top: 30px;
-    border-radius: 50px;
-    /* background-color: #ffffff0a; */
-    min-width: 80% !important;
-    min-height: auto;
+  margin-top: 30px;
+  border-radius: 50px;
+  /* background-color: #ffffff0a; */
+  min-width: 80% !important;
+  min-height: auto;
 }
 
 .search {
@@ -128,8 +126,8 @@ a:hover {
   margin-top: 40px;
 }
 
-.searchTerm {
-    height: 40px !important;
+.searchBar {
+  height: 40px !important;
   width: 300px;
   border-radius: 50px 0px 0px 50px !important;
   border: none;
@@ -143,7 +141,7 @@ a:hover {
   transition: 0.3s;
 }
 
-.searchTerm:focus {
+.searchBar:focus {
   color: #ffffff;
   font-size: 16px;
 }
@@ -155,35 +153,35 @@ a:hover {
   background: #252525;
   text-align: center;
   color: #fff;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 50px 50px 0;
   cursor: pointer;
 }
 
 .buttonSVG {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cards {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgba(23,23,23,255);
-    width: 300px;
-    min-height: 340px;
-    border-radius: 20px;
-    padding: 15px;
-    margin: 50px;
-    transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(23, 23, 23, 255);
+  width: 300px;
+  min-height: 340px;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 50px;
+  transition: all 0.4s ease;
 }
 
 .card:hover {
@@ -192,53 +190,53 @@ a:hover {
 }
 
 .carImg {
-    border-radius: 0px;
-    height: 100% !important;
-    width: 100% !important;
-    border: none;
+  border-radius: 0px;
+  height: 100% !important;
+  width: 100% !important;
+  border: none;
 }
 
 .car-name {
-    font-size: 24px;
+  font-size: 24px;
 }
 .car-disc {
-    font-size: 14px;
-    color: gray;
-    margin-top: -20px;
-    text-align: center;
+  font-size: 14px;
+  color: gray;
+  margin-top: -20px;
+  text-align: center;
 }
 
 .car-details {
-    background-color: #4c4c4c;
-    border: none;
-    color: white;
-    height: 40px;
-    width: 100px;
-    border-radius: 50vh;
-    margin: 5px;
-    margin-right: 10px;
-    transition: 0.2s;
-    font-size: 16px;
+  background-color: #4c4c4c;
+  border: none;
+  color: white;
+  height: 40px;
+  width: 100px;
+  border-radius: 50vh;
+  margin: 5px;
+  margin-right: 10px;
+  transition: 0.2s;
+  font-size: 16px;
 }
 
 .car-details:hover {
-    scale: 1.03;
-    cursor: pointer;
+  scale: 1.03;
+  cursor: pointer;
 }
 
 .car-toCart {
-    background-color: #373737;
-    border: none;
-    color: white;
-    height: 40px;
-    width: 130px;
-    border-radius: 50vh;
-        margin: 5px;
-        transition: 0.2s;
-            font-size: 16px;
+  background-color: #373737;
+  border: none;
+  color: white;
+  height: 40px;
+  width: 130px;
+  border-radius: 50vh;
+  margin: 5px;
+  transition: 0.2s;
+  font-size: 16px;
 }
 
 .car-toCart:hover {
-    scale: 1.03;
-    cursor: pointer;
+  scale: 1.03;
+  cursor: pointer;
 }
