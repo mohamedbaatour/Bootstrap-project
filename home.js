@@ -18,3 +18,9 @@ $(".searchButton").click(function (event) {
     }
   });
 });
+
+$(".car-toCart").click(function () {
+  $(".card").append($("#cart.html-cart"));
+  window.location.href = "cart.html";
+});
+
