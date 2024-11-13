@@ -1,3 +1,6 @@
+//=========================================================
+//                   Cars data
+//=========================================================
 var cars = [
   {
     name: "Mercedes AMG A35",
@@ -57,27 +60,37 @@ var cars = [
   },
 ];
 
-var cart = JSON.parse(window.localStorage.getItem("cart") || "[]");
+//=========================================================
+//             Get data from Local storage
+//=========================================================
+var cartString = window.localStorage.getItem("cart") || "[]";
+var cart = JSON.parse(cartString);
 
-console.log(cart);
-
+//=========================================================
+//               Add to cart function
+//=========================================================
 var addToCart = function (i) {
-  window.location.href = "cart.html";
-  const car = cars[i];
+  var car = cars[i];
   cart.push(car);
   var convert = JSON.stringify(cart);
   window.localStorage.setItem("cart", convert);
+  // redirect
+  window.location.href = "cart.html";
 };
 
-
+//=========================================================
+//           Add cards Dynamically
+//=========================================================
 for (i = 0; i < cars.length; i++) {
   $(".cards").append(`<div class="card">
+        
+    <div class="card-content">
         <img class="carImg" src="${cars[i].image}">
         <h4 class="car-name">${cars[i].name}</h4>
         <p class="car-disc">${cars[i].description}</p>
         <div class="car-Buttons">
-        <button type="button" class="car-details" onclick="showDetails">Details</button>
         <button type="button" class="car-toCart" onclick="addToCart(${i})">Add To Cart</button>
+    </div>
     </div>
     </div>`);
 }
@@ -85,22 +98,14 @@ for (i = 0; i < cars.length; i++) {
 //=========================================================
 //                    Navigation
 //=========================================================
-
-
 $(".logo").click(function () {
   window.location.href = "home.html";
 });
 
-
 //=========================================================
 //                    Search
 //=========================================================
-
-
-
 $(".searchBar").keydown(function () {
-
-
   var input = $(".searchBar").val().toLowerCase();
   var name = $(".car-name");
 
